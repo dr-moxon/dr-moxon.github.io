@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    {%- include head.html -%}
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/ico" sizes="64x64" href="{{ '/assets/favicon.ico' | relative_url }}">
+    <link rel="shortcut icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+  </head>
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }} 
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

@@ -1,0 +1,47 @@
+---
+layout: base
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+</article>
+
+<!-- <script>
+  document.addEventListener('DOMContentLoaded', function() {
+      let links = document.querySelectorAll('.custom-link');
+      links.forEach((link, index) => {
+          link.setAttribute('data-index', index + 1);
+      });
+  });
+</script> -->
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      let links = document.querySelectorAll('.custom-link');
+      links.forEach((link, index) => {
+          link.setAttribute('data-index', index + 1);
+          
+          // Create preview element
+          let preview = document.createElement('div');
+          preview.className = 'link-preview';
+          preview.textContent = getSiteName(link.href);
+          link.appendChild(preview);
+      });
+  });
+
+  function getSiteName(url) {
+      try {
+          const hostname = new URL(url).hostname;
+          return hostname.replace(/^www\./, '');
+      } catch (e) {
+          return url; // Fallback to full URL if parsing fails
+      }
+  }
+</script>
