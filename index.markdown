@@ -2,21 +2,22 @@
 layout: page
 ---
 
+<link rel="stylesheet" href="web4-style.css"/>
+
 <div class="column-1">
     <div class="column-1-section-title">
         <h1>[Luke Moxon]</h1>
     </div>
 
-    <div class="column-1-section-nav-links">
+    <div>
         <div class="nav-links">
-            <a href="#">Home</a>
             <a href="#">About</a>
-            <a href="web4-articles.html">Articles</a>
-            <a href="web4-portfolio.html">Portfolio</a>
+            <a href="articles.html">Articles</a>
+            <a href="portfolio.html">Portfolio</a>
         </div>
     </div>
 
-    <div class="column-1-section-social-media">
+    <div>
         <div class="social-media">
             <h2>Socials:</h2>
             <a href="https://twitter.com/yourusername">Twitter</a>
