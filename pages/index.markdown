@@ -1,4 +1,5 @@
 ---
+permalink: /home.html
 layout: page
 ---
 
