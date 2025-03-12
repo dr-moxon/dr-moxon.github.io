@@ -1,5 +1,5 @@
 ---
-permalink: /home.html
+permalink: /home.markdown
 layout: page
 ---
 
